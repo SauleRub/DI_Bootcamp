@@ -149,4 +149,4 @@ minutes_lived(birthdate_input)
 
 from faker import Faker
 fake = Faker()
-print(fake.name())  # Should print a random name
+print(fake.name())  
