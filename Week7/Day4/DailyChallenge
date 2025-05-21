@@ -1,0 +1,69 @@
+# 📺 Netflix & Data: The Billion-Dollar Recommendation Engine
+
+## 🧠 Real-World Data Analysis Scenario – Week 7 / Day 4
+
+This case study explores how **Netflix** used data analysis to revolutionize content recommendation and user engagement.
+
+---
+
+## 🎯 The Challenge
+
+Netflix wanted to reduce user churn and improve engagement by helping users find content they love — quickly and easily.
+
+---
+
+## 📊 Data Used
+
+Netflix collects and analyzes large amounts of user behavior data:
+- What users watch (and don’t finish)
+- Time of day, day of week
+- Devices used (TV, phone, tablet)
+- Search queries and categories
+- Likes, ratings, scrolling, hovering
+
+---
+
+## 🧠 Analysis Methods
+
+Netflix uses a combination of:
+- **Collaborative filtering** – Recommending shows based on what similar users watched
+- **Content-based filtering** – Recommending based on user’s own history
+- **A/B testing** – Testing layouts, thumbnails, and ranking models
+- **Machine learning** – Personalized ranking algorithms
+
+Tools include Python, Apache Spark, cloud infrastructure, and internal ML pipelines.
+
+---
+
+## 🚀 Outcomes & Impact
+
+- **80%** of watched content comes from recommendations
+- Personalized rows like “Because you watched...” improved satisfaction
+- Saved **over $1 billion per year** by retaining users
+- Became Netflix’s biggest competitive advantage
+
+---
+
+## 🤔 Without Data Analysis?
+
+Without it:
+- Users would see the same homepage
+- Discovery would be harder
+- Churn would increase
+- Netflix might not have scaled globally
+
+---
+
+## 💡 What We Learned
+
+> “Good recommendations = lower churn + longer watch time = more revenue”
+
+This case proves that even subtle user signals (pauses, rewinds, scrolls) can create massive business insights when analyzed well.
+
+---
+
+## 🧾 References
+
+- [Netflix Tech Blog](https://netflixtechblog.com/)
+- [NY Times on Netflix Algorithms](https://www.nytimes.com/2013/02/01/technology/how-netflix-is-turning-viewers-into-lab-rats.html)
+- [McKinsey: How data analytics fuels Netflix](https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/how-netflix-and-other-companies-use-data-insights-to-delight-customers)
