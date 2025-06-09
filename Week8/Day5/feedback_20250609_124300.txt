@@ -1,0 +1,14 @@
+URL: https://github.com/SauleRub/DI_Bootcamp/blob/main/Week8/Day5/DailyChallenge_Week8Day5.ipynb
+suggestions for improvement:
+- The code downloads the dataset from Kaggle, which is a good approach, but it requires a Kaggle API key to be set up beforehand.  Consider adding instructions on how to obtain and set the API key in the chapter content, or alternatively, providing a direct link to a readily accessible version of the dataset (e.g., a static CSV file on GitHub or similar).
+- The code only addresses missing values implicitly by simply reading the 2019 dataset, which might contain them.  Add explicit code to handle missing values, such as dropping rows with NaNs or imputing them. The chapter explicitly mentions addressing missing values.
+- The code creates a scatter plot showing the relationship between 'Social Support' and 'Happiness Score' for the entire dataset (not only the year 2019 as stated).
+- The subplot requirement in point 4 is not fully met. It only compares 'GDP per Capita' and 'Healthy Life Expectancy' for the top 10 happiest countries, not across different regions. It needs to be modified to group data by region before plotting.
+- Add labels to the bars and lines in the subplot for better readability.
+- Use more descriptive variable names (e.g., instead of `df`, use `happiness_data`).
+Brief justification:
+- correctness: The code successfully loads the data, preprocesses it to some extent (replaces spaces in column names), and generates visualizations.  However, it doesn't fully meet the requirements for missing value handling or the regional GDP/health comparison.  The scatter plot is also made on the entire 2019 data instead of a subset.
+- readability: The code is well-structured and uses clear comments. The use of pandas and matplotlib is straightforward and easy to understand.  However, more descriptive variable names would enhance readability.
+- performance: The code is efficient for its tasks.  Loading a CSV with pandas is generally fast.  No obvious performance bottlenecks are present.
+- security: The code does not contain any security vulnerabilities since it only deals with data analysis and visualization using local files and libraries. No user input or external data sources are involved in the data analysis part.
+
