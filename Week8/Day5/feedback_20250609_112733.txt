@@ -1,0 +1,13 @@
+URL: https://github.com/SauleRub/DI_Bootcamp/blob/main/Week8/Day5/Exercises_Week8Day5.ipynb
+suggestions for improvement:
+- Exercise 2: The code uses Celsius instead of Fahrenheit as specified in the instructions.  Change the y-axis label to "Temperature (°F)" and adjust the temperature values accordingly.
+- Exercise 3: The code is incomplete. It starts with `from google.colab import files` and `uploaded = files.upload()` which are specific to Google Colab and won't work outside that environment.  Remove this code and provide a direct method to create the bar chart from a list of sales data as instructed. 
+- Exercise 4: The code correctly reads the zipped CSV file and performs the calculations (total quantity, highest revenue category, and average revenue). The bar chart for quarterly revenue is also correctly generated. However, it would improve readability to add more comments explaining the steps within the quarterly revenue calculation. 
+- Exercise 5: The code correctly generates a line plot for y=x², a bar chart for product sales, and a pie chart for fruit preferences. All charts are appropriately labeled and titled.  Consider adding labels to the pie chart slices for better visual clarity (though the instructions only asked for a legend).
+- Overall: The code demonstrates a good understanding of Matplotlib and data manipulation with Pandas.  However, better adherence to instructions and the addition of more descriptive comments in some sections would improve it further.
+Brief justification:
+- correctness: The code mostly addresses the exercises correctly. However, Exercise 2 has an incorrect y-axis label (Celsius instead of Fahrenheit), and Exercise 3 is incomplete and requires a rewrite to work independently of a Google Colab environment. Exercise 4 and 5 are mostly correct, though Exercise 4 could have more comprehensive comments. The overall correctness is impacted by these issues.
+- readability: The code is well-structured and uses clear variable names.  The use of comments could be expanded, especially in Exercise 4, to explain complex calculations. The code is generally easy to follow and understand.
+- performance: The code is efficient and uses appropriate libraries for the tasks.  There are no apparent performance bottlenecks.
+- security: No security concerns are present in the provided code.
+
