@@ -1,0 +1,15 @@
+URL: https://github.com/SauleRub/DI_Bootcamp/blob/main/Week8/Day4/Week8Day4_DailyChallenge.ipynb
+suggestions for improvement:
+- The code correctly handles missing values and duplicate rows by dropping the 'Unnamed: 0' column and removing duplicates, aligning with the instructions.
+- The group-wise analysis using `groupby` and aggregation functions is correctly implemented.
+- The bar chart visualization is created, including labels and a title, although the color scheme could be improved for better accessibility and aesthetics.
+- Improve the chart by using a more descriptive and informative title.
+- Enhance the chart's readability by adding data labels to each bar to show the exact average salary value.
+- Consider using a more descriptive and accessible color palette for the bars.
+- Add a legend to the chart to clearly indicate the meaning of each color.
+Brief justification:
+- correctness: The code accurately performs data preprocessing steps, including handling missing values (though it doesn't specify a strategy, simply removing rows with nulls), and removes duplicates.  The `groupby` operation correctly calculates mean and median salaries for each experience level. The visualization is mostly correct, but lacks some elements specified in the instructions (see feedback).
+- readability: The code is well-structured and uses clear variable names.  Comments could be added to clarify certain steps, especially the mapping of experience levels, but the logic is generally easy to follow.
+- performance: The code is efficient. The use of pandas for data manipulation and matplotlib for visualization is appropriate and performs well for this dataset size.
+- security: No security concerns are present in the provided code.
+
