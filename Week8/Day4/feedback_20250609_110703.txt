@@ -1,0 +1,16 @@
+URL: https://github.com/SauleRub/DI_Bootcamp/blob/main/Week8/Day4/Mini_project_1_Machine.ipynb
+suggestions for improvement:
+- The code lacks error handling for file uploads and data reading.  Add `try...except` blocks to gracefully handle potential exceptions (e.g., FileNotFoundError, pd.errors.EmptyDataError).
+- Improve data cleaning by handling or imputing missing values in 'work_interfere' more thoughtfully instead of just dropping rows. Consider using strategies like mode imputation or creating a new category like 'Unknown'.
+- The age binning is arbitrary. Provide a justification for the chosen bins and consider using more standard age brackets (e.g., 18-24, 25-34, etc.).
+- The gender cleaning function is overly simplistic.  Real-world gender data is much more complex; consider using a more robust approach or leaving it as a categorical variable to allow for greater nuance and avoid misclassifications.
+- The visualization using `matplotlib` lacks informative axis labels, legends, and detailed titles. These additions will improve clarity.
+- Add comments to explain the purpose of each code section and the rationale behind data cleaning choices. This enhances readability.
+- Consider using more advanced visualization libraries such as Seaborn for more compelling and informative plots.
+- The code for identifying highest and lowest reported rates implicitly assumes 'Yes' is always a column. Check for its existence before using it to handle cases where there might not be 'Yes' responses for some countries.
+Brief justification:
+- correctness: The code addresses the three main questions posed in the chapter content, but there are issues with data cleaning and handling of missing values.  Dropping many columns and rows might discard important information. The results accurately reflect the provided data after cleaning, however, the cleaning process itself is lacking in sophistication, potentially affecting the validity of the conclusions.
+- readability: The code is somewhat readable, but the lack of comments makes it difficult to understand the rationale behind certain cleaning steps and choices. The use of functions would make the code more organized and reusable.
+- performance: The code's performance is reasonably good for this dataset size.  However, it could be improved by optimizing data cleaning steps (e.g., using vectorized operations instead of `apply` where possible).
+- security: There are no security vulnerabilities in the provided code as it only performs local file operations and data manipulation.
+
