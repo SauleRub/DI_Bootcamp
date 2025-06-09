@@ -1,0 +1,16 @@
+URL: https://github.com/SauleRub/DI_Bootcamp/blob/main/Week8/Day4/Mini_project_1_Machine.ipynb
+suggestions for improvement:
+- The code lacks comments explaining the purpose of each section or function.  Adding more comments would greatly improve readability.
+- Error handling for file uploads could be improved. The code assumes the file upload will always succeed and doesn't handle potential exceptions.
+- The data cleaning process is somewhat arbitrary.  The justification for dropping so many columns is missing. A more principled approach to feature selection should be considered (e.g., based on correlation analysis or feature importance from a model).
+- The age binning is quite broad. Consider using more granular age groups or allowing for a more flexible approach (e.g., using quantiles to divide the data).
+- The gender cleaning function could be simplified.  The use of `in` for string matching is not robust (e.g., it would match 'malevolent' and misclassify).  Consider using regex for more accurate matching.
+- The code directly prints the results instead of storing them in variables, which reduces reusability.
+- The visualization for countries is limited; showing the proportion of 'Yes' and 'No' responses for each country would be more informative. Consider a bar chart with two bars per country (Yes and No).
+- The notebook uses `files.upload()` which is specific to Google Colab. To make it more portable, consider providing alternative methods for data loading.
+Brief justification:
+- correctness: The code successfully loads the dataset, performs some data cleaning (though rather aggressively), and addresses the three main questions posed in the chapter content.  However, the data cleaning is not well-justified, and some aspects of the analysis (like country reporting) could be more detailed and insightful.  The visualizations partially address the questions but could provide better context and clarity. The score is reduced because the analysis lacks depth and justification in several areas.
+- readability: The code is functional but lacks sufficient comments to explain its logic and steps. The variable names are mostly descriptive, but better comments are needed to clarify the data cleaning process and the rationale behind it. The use of inline comments would improve readability even further.
+- performance: The code's performance is acceptable for this dataset size. However, the aggressive column dropping could be improved by performing a more thoughtful feature selection that is justified by statistical measures or domain knowledge.  More efficient data cleaning and aggregation techniques could also be explored.
+- security: The code doesn't contain any apparent security vulnerabilities. No external libraries or untrusted sources are used in a way that would pose security risks.
+
