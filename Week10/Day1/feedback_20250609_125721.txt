@@ -1,0 +1,12 @@
+URL: https://github.com/SauleRub/DI_Bootcamp/blob/main/Week10/Day1/DailyChallenge_Week10Day1.ipynb
+suggestions for improvement:
+- The code successfully generates the histogram and box plot as requested, using Matplotlib and Seaborn respectively.  The interactive scatter plot using Plotly Express is also created correctly. The heatmap is generated but could be improved.
+- Handle potential errors during file upload and data processing. Add `try-except` blocks to gracefully handle situations where the file might not be found or data might be corrupted.
+- The optional heatmap is created, but the code lacks error handling (e.g., what if a brand has no entries for certain conditions?).  Also, the condition labels in the heatmap are quite long and overlapping. Consider simplifying the conditions (e.g., '10 days left' -> '>1 day') before generating the heatmap for better readability.  The figure size for the heatmap could also be adjusted for optimal viewing.
+- For the interactive scatter plot, consider adding tooltips to display more relevant information on hover, such as brand and model.
+Brief justification:
+- correctness: The code correctly creates a histogram of car prices using Seaborn's `histplot`, a box plot showing price distribution by brand using Seaborn's `boxplot`, and an interactive scatter plot of Price vs. Mileage, color-coded by Condition, using Plotly Express's `scatter`. The optional heatmap is attempted, but it's not perfectly implemented (see feedback).  All plots are labeled.  The score reflects the successful implementation of the main three tasks and the partially successful implementation of the optional heatmap. 
+- readability: The code is well-structured and easy to follow.  Variable names are mostly descriptive.  However, adding comments to explain specific steps or choices in the plotting parameters would enhance readability further.
+- performance: The code's performance is reasonable for this dataset size. However, for significantly larger datasets, optimizing data processing steps (like using more efficient data structures or vectorized operations) could improve performance.  The code could also be made more efficient by pre-processing the condition column to avoid repetitive calculations inside the `apply` function of the heatmap generation.
+- security: No security vulnerabilities are apparent in the provided code. It's purely data processing and visualization; there's no interaction with external systems or user inputs that could introduce security risks.
+
