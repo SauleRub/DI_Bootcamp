@@ -47,7 +47,7 @@ class MenuItem:
             print(f"{self.name} updated to {new_name} with price {new_price}.")
         except Exception as e:
             print("Error updating item:", e)
-
+#Checking
 if __name__ == "__main__":
     burger = MenuItem("Burger", 35)
     burger.save()
