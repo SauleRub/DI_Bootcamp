@@ -1,0 +1,15 @@
+URL: https://github.com/SauleRub/DI_Bootcamp/blob/main/Week6/Day2/menu_item.py
+suggestions for improvement:
+- The `MenuItem` class should not handle database interactions directly.  Create a separate data access layer (e.g., a repository or DAO) to encapsulate database operations.
+- The `MenuManager` class is missing.  Implement the `get_by_name` and `all_items` class methods as specified in the instructions.
+- Implement error handling that gracefully handles database connection issues and other potential exceptions.  Consider using `try...except` blocks around database operations.
+- Add input validation to prevent SQL injection vulnerabilities.  Sanitize user inputs before using them in SQL queries (e.g., using parameterized queries as you've already done, but consistently).
+- The `delete` method should ideally check if the item exists before attempting to delete it. Otherwise, a non-existent item would still trigger a success message.  Add this check to ensure the method handles such situations appropriately.
+- Implement Part 2 of the exercise: Create the `menu_editor.py` file with the functions as specified (show_user_menu, add_item_to_menu, remove_item_from_menu, update_item_from_menu, show_restaurant_menu).
+- Close the database connection (`conn.close()`) when finished to release resources.
+Brief justification:
+- correctness: The `MenuItem` class implements `save`, `delete`, and `update` methods that interact with the PostgreSQL database. However, it lacks the required `MenuManager` class with its methods (`get_by_name`, `all_items`). Part 2 of the exercise is entirely missing.  While the code demonstrates basic database interaction, it falls short of fully implementing the specified requirements and structure. The implementation addresses only a subset of the features, thereby reducing the correctness score.
+- readability: The code is well-structured and uses clear variable names. The database interactions are reasonably well-organized.  The comments could be more extensive.
+- performance: The database interactions are efficient for the current scale. There are no significant performance bottlenecks for small-scale use.  Performance can be improved by adding error checks which prevents unnecessary database queries, and using appropriate indexing in the database.
+- security: The current implementation uses parameterized queries to prevent SQL injection, which is a good start.  However, there's no robust input validation and error handling to protect against other potential attacks or database errors (such as handling incorrect input types that can crash the program).  This limits the security score.
+
